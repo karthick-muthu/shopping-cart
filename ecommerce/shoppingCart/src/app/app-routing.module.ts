@@ -9,7 +9,12 @@ import { SliderComponent } from './slider/slider.component';
 
 
 const routes: Routes = [
-  { path: '', component: SliderComponent},
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: "full"
+},
+  
   { path: 'header', component: HeaderComponent },
   { path: 'home', component: HomeComponent },
 

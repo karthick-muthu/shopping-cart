@@ -1,14 +1,101 @@
-<div class="headerMenu">
-    <mat-grid-list cols="4" rowHeight="100px">
-        <mat-grid-tile [colspan]="1" [rowspan]="1">
-            <img src="assets/img/mostlikers.png">
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="2" [rowspan]="1">
-            <input type="text" placeholder="search here">
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="1">Login / Signup </mat-grid-tile>
-    </mat-grid-list>
-    <mat-grid-list cols="1" rowHeight="50px">
-        <mat-grid-tile [colspan]="1" [rowspan]="1">All Menu </mat-grid-tile>
-    </mat-grid-list>
+
+<div fxLayoutAlign="space-around center" fxLayout="column">
+    <mat-toolbar class="header"><div  fxFlex=100>
+       <div fxLayout="row" fxLayoutAlign="space-around center">
+            <div fxLayoutAlign="start center" fxFlex=20>
+                Sadhu Cart
+            </div>
+            <div fxFlex=50>
+                <form class="example-form">
+                    <input class="header-search" type="text"
+                           placeholder="Search for a street"
+                           [formControl]="control"
+                           [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let street of filteredStreets | async" [value]="street">
+                        {{street}}
+                      </mat-option>
+                    </mat-autocomplete>
+                    
+                    <mat-icon aria-hidden="false" aria-label="search">search</mat-icon>
+                    <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                    
+                  </form>
+                <!-- <input class="header-search"  type="text" placeholder="search here"> -->
+            </div>
+            <div class="aligned-with-icon" fxFlex=15>
+                <mat-icon  style="padding-right: 33px;" aria-hidden="false" aria-label="Shopping">supervisor_account</mat-icon>
+                <span >Login / Signup</span>
+            </div>
+            <div class="aligned-with-icon"  fxFlex=15>
+                <mat-icon style="padding-right: 33px;" aria-hidden="false" aria-label="Shopping">add_shopping_cart</mat-icon>  Cart
+            </div>
+       </div>
+    </div>
+</mat-toolbar>
+<mat-toolbar style="height: 45px;"> <div fxFlex=100 >
+           <div fxLayout="row" fxLayoutAlign="space-evenly center">
+          
+         
+                <!-- New menu  -->
+                <!-- <mat-menu class="menuList" #menu="matMenu"></mat-menu> -->
+                <!-- <button mat-button [matMenuTriggerFor]="animals">Animal index</button> -->
+                <div  fxFlex class="menuList">
+                    <span><a mat-button [matMenuTriggerFor]="animals" >Mobile</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >Men Dress</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >Woman Dress</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >Baby & kids Dress</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >New arrival</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >Trending</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >Home & Furniture</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >Sports, Books & More</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >TVs & Appspanances</a></span>
+                    <span><a mat-button [matMenuTriggerFor]="animals" >Books</a></span>
+                </div>
+                    <mat-menu #animals="matMenu">
+                        <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+                        <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+                    </mat-menu>
+                    
+                    <mat-menu  #vertebrates="matMenu">
+                        <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
+                        <!-- <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button> -->
+                        <button mat-menu-item >Reptiles</button>
+                        <button mat-menu-item>Birds</button>
+                        <button mat-menu-item>Mammals</button>
+                    </mat-menu>
+                    
+                    <mat-menu #invertebrates="matMenu">
+                        <button mat-menu-item>Insects</button>
+                        <button mat-menu-item>Molluscs</button>
+                        <button mat-menu-item>Crustaceans</button>
+                        <button mat-menu-item>Corals</button>
+                        <button mat-menu-item>Arachnids</button>
+                        <button mat-menu-item>Velvet worms</button>
+                        <button mat-menu-item>Horseshoe crabs</button>
+                    </mat-menu>
+                    
+                    <mat-menu #fish="matMenu">
+                        <button mat-menu-item>Baikal oilfish</button>
+                        <button mat-menu-item>Bala shark</button>
+                        <button mat-menu-item>Ballan wrasse</button>
+                        <button mat-menu-item>Bamboo shark</button>
+                        <button mat-menu-item>Sonoran desert toad</button>
+                        <button mat-menu-item>Western toad</button>
+                        <button mat-menu-item>Arroyo toad</button>
+                        <button mat-menu-item>Yosemite toad</button>
+                    </mat-menu>
+
 </div>
+</div>
+</mat-toolbar>
+
+                   
+                   
+
+
+                    
+                    
+      <!-- End menu -->
+
+

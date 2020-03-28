@@ -5,3 +5,40 @@ mat-grid-tile {
 mat-grid-list {
     border: solid 2px #000;
 }
+.footer{
+    height:200px;
+    background-color:rgb(58, 72, 90);
+    color: white;
+    font-family: Arial,sans-serif;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.footer ul li {
+    list-style-type: none;
+    
+
+}
+.footerTabHeading{
+    font-weight: 700;
+    color: #FFF;
+    font-size: 16px;
+
+}
+
+.footerTop {
+    font-family: inherit;
+    background-color:rgb(98, 114, 133);
+    font-size:14px;
+    color:white;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    background-color: red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
