@@ -1,1 +1,108 @@
-<p>category works!</p>
+<div class="categoryPage">
+    <div fxFlex=100>
+        <div fxLayout="column"  fxFlex=20>
+            <div class="filterBox">
+                <mat-card>
+                    <mat-card-header>
+                    <mat-card-subtitle>SIZE</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <ul>
+                            <li><mat-checkbox>3XS</mat-checkbox> </li>
+                            <li><mat-checkbox>XS</mat-checkbox> </li>
+                            <li><mat-checkbox>XL</mat-checkbox> </li>
+                            <li><mat-checkbox>L</mat-checkbox> </li>
+                            <li><mat-checkbox>M</mat-checkbox> </li>
+                            <li><mat-checkbox>S</mat-checkbox> </li>
+                        </ul>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="filterBox">
+                <mat-card>
+                    <mat-card-header>
+                    <mat-card-subtitle>DISCOUNT</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <ul>
+                            <li><mat-checkbox>80% or More</mat-checkbox> </li>
+                            <li><mat-checkbox>70% or More</mat-checkbox> </li>
+                            <li><mat-checkbox>60% or More</mat-checkbox> </li>
+                            <li><mat-checkbox>50% or More</mat-checkbox> </li>
+                            <li><mat-checkbox>40% or More</mat-checkbox> </li>
+                            <li><mat-checkbox>30% or More</mat-checkbox> </li>
+                            <li><mat-checkbox>20% or More</mat-checkbox> </li>
+                        </ul>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="filterBox">
+                <mat-card>
+                    <mat-card-header>
+                    <mat-card-subtitle>Brands</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <mat-card-content>
+                            <ul>
+                                <li><mat-checkbox>ADIDAS</mat-checkbox> </li>
+                                <li><mat-checkbox>Jacks</mat-checkbox> </li>
+                                <li><mat-checkbox>Allen Solly</mat-checkbox> </li>
+                                <li><mat-checkbox>Roadster</mat-checkbox> </li>
+                                <li><mat-checkbox>Nika</mat-checkbox> </li>
+                                <li><mat-checkbox>Abibas</mat-checkbox> </li>
+                            </ul>
+                        </mat-card-content>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="filterBox">
+                <mat-card>
+                    <mat-card-header>
+                    <mat-card-subtitle>OCCASION</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <ul>
+                            <li><mat-checkbox>Casual</mat-checkbox> </li>
+                            <li><mat-checkbox>Longer</mat-checkbox> </li>
+                            <li><mat-checkbox>Party</mat-checkbox> </li>
+                            <li><mat-checkbox>Sports</mat-checkbox> </li>
+                            <li><mat-checkbox>Nika</mat-checkbox> </li>
+                            <li><mat-checkbox>Abibas</mat-checkbox> </li>
+                        </ul>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        <div fxLayout="column"   fxFlex=80>
+            <mat-card>
+            <div   fxFlex=100>
+                <mat-card-header>
+                    <mat-card-title class="breadcrumbPage"> Home  >  category > <span class="active">All category</span></mat-card-title>
+                </mat-card-header>             
+            </div>
+            
+        </mat-card>
+        <mat-card>
+            <div fxFlex=100  class="cards">
+                <div fxLayout='row warp'>
+                <div  fxLayout='25' *ngFor="let productSlide of productSlides">        
+                    <mat-card class="mat-elevation-z0" style="margin:0.5em; text-align: left;">
+                    <img mat-card-image  style=" width: 262px; height:337px; object-fit: contain;" src="{{ productSlide.img }}" alt="">
+                    <mat-card-content>
+                        <span style="float: right;"><mat-icon  aria-hidden="false" aria-label="Shopping">favorite_border</mat-icon></span>
+
+                        Solid Men Polo Neck Black T-...
+                  <div class="productPricelist">
+                     <div class="ProdctPrice">Rs.5000
+                     <span style="text-align: right;" class="offerPrice">Rs.5000</span>
+                    </div>
+                </div>
+                    </mat-card-content>    
+                </mat-card>
+                </div>
+                </div>
+            </div>
+        </mat-card>
+        </div>       
+    </div>
+</div>

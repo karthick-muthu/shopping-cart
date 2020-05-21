@@ -1,0 +1,25 @@
+.breadcrumbPage {
+    display: inline;
+    font-size: 12px;
+    padding: 5px;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.filterBox ul {
+    list-style-type: none;
+}
+.active {
+    color:red;
+}
+.checkboxClass {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 1.4px solid #c2c2c2;
+    border-radius: 1.5px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}

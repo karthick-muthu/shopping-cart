@@ -1,0 +1,273 @@
+<div  fxLayout="column" class="product"  fxflex="100" >
+    <div fxflex=40 class="productBreadcrumps" >
+        Home > Category > Short Sleeve Billow Top in Black Self Squares
+
+    </div>
+    <div fxlex="40">  
+    <div fxFlex =100 fxLayout="row" fxLayoutAlign="space-evenly" class="productContent">
+        <div fxFlex =45 class="productSlider">
+            <ngx-slick-carousel class="carousel" 
+                #slickModal="slick-carousel" 
+                [config]="slideConfig" 
+                (init)="slickInit($event)"
+                (breakpoint)="breakpoint($event)"
+                (afterChange)="afterChange($event)"
+                (beforeChange)="beforeChange($event)">
+                <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <img src="{{ slide.img }}" style=" width: 400px; height:600px; object-fit: contain;" >
+                </div>
+            </ngx-slick-carousel>
+         
+        </div>
+        <div fxFlex =40  class="productDetails">    
+            <div  fxLayout="column" fxFlex=100>         
+            <div fxFlex =10 class="productBrand"> <h5> Printed Men Hooded Neck Black T-Shirt </h5></div>   
+            <div fxFlex =10 class="productPrice">
+                <span class="orignalPrice">₹199</span>  
+                <span class="priceOffer">₹999</span>  
+                <span class="priceDiscount">80%</span>                 
+            </div>
+            <div fxFlex =10 class="productAddress">
+                <label>Deliver to</label> 
+                <input type="text" name="pincode"  />
+            </div>
+            <div fxFlex =10 class="productSize">
+                <div fxFlex =5>
+                    <span class="productHeading">Size</span>
+                </div>
+                <div fxFlex =95>
+                    <ul>
+                        <li>XS</li>
+                        <li>S</li>
+                        <li>M</li>
+                        <li>L</li>
+                        <li>XL</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div fxFlex =10 class="productQuantity">                
+                Quantity 
+                <span class="quantity"><input type="number" min="1" max="20" name="Quantity" /></span>
+            </div>
+            <div fxFlex =10 class="productCart">                
+                    <button>ADD TO CART</button> 
+            </div>
+            <div fxFlex =40  class="productDescrption">
+                <h6>Product Details</h6>
+                <ul>
+                   <li>
+                    Fit Type: Regular
+                   </li> 
+                   <li>
+                    100% cotton
+                   </li> 
+                   <li> 
+you'll fall in love with this T-shirt in a nano-second.
+                       
+                   </li> 
+                   <li>
+                    Ultra-light cotton jersey feels fantastic next to your skin
+
+
+                   </li> 
+                   <li>
+                    Preshrunk for great fit wash after wash
+
+
+                   </li> 
+                   <li> 
+                    you'll fall in love with this T-shirt in a nano-second.
+                                           
+                                       </li> 
+                </ul>
+                </div>
+        </div>  
+        </div>
+    </div>
+</div>
+    <div fxFlex=10 flexLayout="row"  style="margin: 20px; text-align: justify;"  class="productSpeacification">
+        <div fxFlex=50 class="productReviewDetail"> 
+            <div flexLayout="row" fxLayoutAlign="space-evenly">
+                <div  fxFlex=40 class="overallRating">                    
+                    <div class="box_total">
+                        <h5>Overall</h5>
+                        <h4 style="font-size: 48px;
+                        font-weight: 700;
+                        color: #384aeb;">4.0</h4>
+                        <h6>(03 Reviews)</h6>
+                    </div>
+                </div>
+                <div  fxFlex=50 class="rating">
+                        <h5 style="font-size: 18px;
+                        color: #222;
+                        font-weight: 500;
+                        margin-bottom: 10px; margin-left:35px;">Based on 3 Reviews</h5>
+                        <ul class="list">
+                            <li>
+                                5 Star  
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon> 
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon> 
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon> 01
+                            </li>
+                            <li>
+                                4 Star  
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon> 02
+                            </li>
+                            <li>
+                                3 Star  
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon> 03
+                            </li>
+                            <li>
+                                2 Star  
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon> 04
+                            </li>
+                            <li>
+                                1 Star  
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon> 05
+                            </li>
+                        </ul>
+                </div>
+            </div>
+           <div flexLayout="row" fxLayoutAlign="space-around center" style="margin-top: 10px ;" class="customerReviews">
+            <div fxFlex=90 class="review_list">
+                <div class="review_item">
+                <div class="media">
+                <div class="d-flex">
+                <img src="assets/img/review-1.webp" alt="">
+                </div>
+                <div class="media-body">
+                <h4>Blake Ruiz</h4>
+                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo</p>
+                </div>
+                <div class="review_item">
+                <div class="media">
+                <div class="d-flex">
+                <img src="assets/img/review-2.webp" alt="">
+                </div>
+                <div class="media-body">
+                <h4>Blake Ruiz</h4>
+                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo</p>
+                </div>
+                <div class="review_item">
+                <div class="media">
+                <div class="d-flex">
+                <img src="assets/img/review-3.webp" alt="">
+                </div>
+                <div class="media-body">
+                <h4>Blake Ruiz</h4>
+                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo</p>
+                </div>
+                </div>
+
+           </div>
+        </div>
+
+        <div fxFlex=40 class="addReview">
+            <h4>Add a Review</h4>
+            <p>Your Rating :
+                <mat-icon aria-hidden="false" aria-label="search">star</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="search">star_border</mat-icon>
+                outsanding:</p>
+            <form action="#/" class="form-contact form-review mt-3">
+                <div class="form-group">
+                    <input class="form-control" name="name" type="text" placeholder="Enter your name" required="">
+                </div>
+                <div class="form-group">
+                     <input class="form-control" name="email" type="email" placeholder="Enter email address" required="">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="subject" type="text" placeholder="Enter Subject">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control different-control w-100" name="textarea" id="textarea" cols="30" rows="5" placeholder="Enter Message"></textarea>
+                </div>
+                <div class="form-group text-center text-md-right mt-3">
+                    <button type="submit" class="button button--active button-review">Submit Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div fxFlex=10 class="productRelated">        
+        <h3 style="padding-bottom: 8px;">Related product</h3>
+        <ngx-slick-carousel class="carousel" 
+        #slickModal="slick-carousel" 
+        [config]="productSlideConfig" 
+        (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)"
+        (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let productTrend of productTrends" class="slide">        
+              <mat-card class="mat-elevation-z0" style="margin:0.5em; text-align: left;">
+              <img mat-card-image  style=" width: 370px; height:475px; object-fit: contain;" src="{{ productTrend.img }}" alt="">
+               
+               <mat-card-content>
+                  <span style="float: right;"><mat-icon  aria-hidden="false" aria-label="Shopping">favorite_border</mat-icon></span>
+   
+                     Mi LED Smart TV 4A PRO 80 cm (32) with Android
+                     <div class="productPricelist">
+                        <div class="ProdctPrice">Rs.5000
+                        <span style="text-align: right;" class="offerPrice">Rs.5000</span>
+                       </div>
+                   </div>
+               </mat-card-content>
+               </mat-card>
+              <!-- <h6>Mi LED Smart TV 4A PRO 80 cm (32) with Android</h6> 
+              <div class="productPricelist">
+                   <div class="ProdctPrice">Rs.5000
+                   <span class="offerPrice">Rs.5000</span>
+                  </div>
+              </div> -->
+                     
+        </div>
+        </ngx-slick-carousel>
+    </div>
+</div>

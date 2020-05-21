@@ -1,0 +1,178 @@
+<div class="cart" style="margin: 40px;" fxLayout="row" fxFlexOffset=3 fxFlex="100" >
+    <div fxFlex="70">
+        <!-- Form Layout -->
+        <mat-accordion class="shippingDetails">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  1. Login
+                </mat-panel-title>
+                <!-- <mat-panel-description>
+                  Type your name and age
+                </mat-panel-description> -->
+              </mat-expansion-panel-header>
+              <div  fxFlex="40" >
+                    <form method="post">
+                        <div class="form-margin">
+                            <label>Email</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-margin">
+                            <label>Password</label>
+                            <input type="password" class="form-control" />
+                        </div>
+                        <div class="form-margin">
+                            <input type="button" value="Submit" class="cartButton" />
+                        </div>
+                    </form>
+                </div>              
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  2. Delivery Address
+                </mat-panel-title>
+                
+              </mat-expansion-panel-header>
+              <div  fxFlex="75" >
+                <form method="post">
+                    <div class="form-margin">
+                        <label>Full name: </label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-margin">
+                        <label>Address line 1: </label>
+                        <input type="text" class="form-control" placeholder="Street address, P.O. box, company name, c/o " />
+                    </div>
+                    <div class="form-margin">
+                        <label>Address line 2: </label>
+                        <input type="text" class="form-control" placeholder="Street address, P.O. box, company name, c/o " />
+                    </div>
+                    <div class="form-margin">
+                        <label>City : </label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-margin">
+                        <label>State/Province/Region:  : </label>
+                        <input type="text" class="form-control"  />
+                    </div>
+                    <div class="form-margin">
+                        <label>ZIP:  </label>
+                        <input type="text" class="form-control"  />
+                    </div>
+                    <div class="form-margin">
+                        <label>Phone number:  </label>
+                        <input type="text" class="form-control"  />
+                    </div>
+                    <div class="form-margin">
+                        <input type="button" value="Deliver to this address" class="cartButton" />
+                    </div>
+                </form>
+              </div>
+
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>3. Order Summary</mat-panel-title>
+                </mat-expansion-panel-header>
+                <div flexLayout="row" fxFlex="100"  class="cartProduct">
+                    <div class="cartItems paddingBorder">
+                    <div fxFlex="20">
+                        <img alt="" src="assets/product/smal1.jpg">
+                    </div>
+                    <div fxFlex="60">
+                        <a href="#">
+                            <h6>Aeuui Workout Tops for Women Mesh Racerback Tank Yoga Shirts Gym Clothes Black</h6>
+                        </a>
+                        <div class="size form-margin">
+                            size : XL
+                        </div>
+                        <div class="productPrice form-margin">
+                            <span class="orignalPrice">₹199</span>  
+                            <span class="priceOffer">₹999</span>  
+                            <span class="priceDiscount">80%</span>                 
+                        </div>
+                        <div class="productQuantity form-margin">
+                            <button class="cartButtons" disabled=""> – </button>
+                            <div class="cartTextBoxdiv">
+                                <input type="text" value="1" class="cartTextBox">
+                            </div>
+                            <button class="cartButtons"> + </button>
+                        </div>
+                    </div>
+                    <div class="text-align-right" fxFlex="20">
+                        Remove
+                    </div>
+                    </div>
+                    <div class="cartItems paddingBorder">
+                        <div fxFlex="20">
+                            <img alt="" src="assets/product/smal1.jpg">
+                        </div>
+                        <div fxFlex="60">
+                            <a href="#">
+                                <h6>Aeuui Workout Tops for Women Mesh Racerback Tank Yoga Shirts Gym Clothes Black</h6>
+                            </a>
+                            <div class="size form-margin">
+                                size : XL
+                            </div>
+                            <div class="productPrice form-margin">
+                                <span class="orignalPrice">₹199</span>  
+                                <span class="priceOffer">₹999</span>  
+                                <span class="priceDiscount">80%</span>                 
+                            </div>
+                            <div class="productQuantity">
+                                <button class="cartButtons" disabled=""> – </button>
+                                <div class="cartTextBoxdiv">
+                                    <input type="text" value="1" class="cartTextBox">
+                                </div>
+                                <button class="cartButtons"> + </button>
+                            </div>
+                        </div>
+                        <div class="text-align-right" fxFlex="20">
+                            Remove
+                        </div>
+                        </div>                   
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>4. Payment Options</mat-panel-title>
+                </mat-expansion-panel-header>
+                <div flexLayout="row" fxFlex="100"  class="cartProduct">
+                        <div>
+                            <input type="radio" value="code"/> COD 
+                            <input type="radio" value="code"/> Online Payment <br>
+                            <input type="button" class="cartButton formMargin" value="Continue Payment" /> 
+                        </div>                
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+        <!-- End form layout -->
+       
+    </div>
+    <div fxFlex="20" xfxLayoutAlign="center" class="cartPayment cartCheckout">
+        <!-- <h5>Price Details</h5>  -->
+        <div fxLayout="column">
+           <h5 class="paddingBorder">Price Details</h5> 
+           <div fxFlex="100" class="paddingBorder">
+              <div fxFlex="50">Price (6 items)</div>
+              <div class="text-align-right" fxFlex="50">₹ 1,230 </div> 
+           </div> 
+           <div fxFlex="100" class="paddingBorder">
+              <div fxFlex="50">Delivery Fee</div>
+              <div class="text-align-right" fxFlex="50">Free </div> 
+           </div> 
+           <div fxFlex="100" class="paddingBorder">
+              <div fxFlex="50"><h5>Total</h5></div>
+              <div class="text-align-right" fxFlex="50"><h5>₹ 1,230</h5></div> 
+           </div> 
+           <!-- <div class="productCart paddingBorder">                
+              <button class="cartButton">Place Order</button> 
+           </div> -->
+        </div>
+    </div>
+
+</div>

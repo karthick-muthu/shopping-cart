@@ -1,4 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+.orignalPrice {
+    font-size: 28px;
+    vertical-align: sub;
+    font-weight: 500;
+    color: #212121;
+}
+.priceOffer {
+    font-size: 16px;
+    margin-left: 12px;
+    vertical-align: middle;
+    color: #878787;
+}
+.priceDiscount {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #26a541;
+    vertical-align: middle;
+}
+.productQuantity input {
+    margin-left: 15px;
+}
+.cartButtons {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(#fff,#f9f9f9);
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    padding-top: 1px;
+    line-height: 1;
+}
+.cartTextBox {
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+}
+.cartTextBoxdiv {
+    display: inline-block;
+    padding: 1px 17px;
+    width: calc(100% - 60px);
+    height: 100%;
+    width: 56px;
+    height: 28px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    margin: 0 10px;    
+}
+.cartItems{
+    margin: 20px;
+}
+.text-align-right {
+    text-align: right;
+}
+
+.productCart button {
+    color: #FFFFFF;
+    background-color: rgb(24, 24, 24);
+    border-width: 0;
+    width: 61%;
+    font-size: 16px;
+    height: 38px;
+}
+
+.cartButton {
+    color: #FFFFFF;
+    background-color: rgb(24, 24, 24);
+    border-width: 0;
+    width: 25%;
+    font-size: 16px;
+    height: 38px;
+}
+
+.paddingBorder {
+    padding: 20px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.form-margin {
+   margin-bottom: 20px;
+}
+.form-margin label{
+    font-weight: bold;
+    color: #232f3e;
+    font-size: 16px;
+ }
+
+
+.formMargin {
+    margin-top: 10px;
+}
 
